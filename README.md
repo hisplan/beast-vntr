@@ -2,6 +2,10 @@
 
 Bayesian phylogenetic analysis of molecular sequences and VNTR or Microsatellites
 
+- beagle-lib v2.1.2
+- BEAST v2.4.7
+- BEASTvntr v0.1.1
+
 ## Building Docker BEAST2 and BEASTvntr
 
 ```
@@ -45,6 +49,18 @@ where `w.x.y.z` is your IP address.
 
 ```
 $ docker run -it -e DISPLAY=$IP:0 my-beast-vntr
+```
+
+## Known Issues
+
+Running `BEAUti` throws the null pointer exception shown below:
+
+```
+java.lang.NullPointerException
+	at beast.app.beastapp.BeastLauncher.copyFilesInDir(Unknown Source)
+	at beast.app.beastapp.BeastLauncher.createBeastPackage(Unknown Source)
+	at beast.app.beastapp.BeastLauncher.loadBEASTJars(Unknown Source)
+	at beast.app.beauti.BeautiLauncher.main(Unknown Source)
 ```
 
 ## References
