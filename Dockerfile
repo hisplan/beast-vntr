@@ -6,9 +6,6 @@ ENV BEAGLE_LIB_VERSION="2_1_2"
 ENV BEAST_VERSION="2.4.7"
 ENV BEASTvntr_VERSION="0.1.1"
 
-# RUN apt-get update -y \
-#     && apt-get install -y vim wget openjdk-8-jre openjdk-8-jdk gcc make autoconf automake libtool subversion pkg-config git ant unzip
-
 RUN apt-get update -y \
     && apt-get install -y wget openjdk-8-jre gcc make autoconf automake libtool pkg-config unzip
 
