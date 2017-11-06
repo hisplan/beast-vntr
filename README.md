@@ -24,7 +24,7 @@ Start XQuartz from command line using:
 $ open -a XQuartz
 ```
 
-In the XQuartz preferences, go to the "Preferences" menu, then the“Security” tab, and enable `Allow connections from network clients`.
+In the XQuartz preferences, go to the `Preferences` menu, then the `Security` tab, and enable `Allow connections from network clients`.
 
 Run the following:
 
@@ -43,7 +43,9 @@ where `w.x.y.z` is your IP address.
 
 ## Running BEASTvntr
 
-docker run -it -e DISPLAY=$IP:0 my-beast-vntr
+```
+$ docker run -it -e DISPLAY=$IP:0 my-beast-vntr
+```
 
 ## References
 
