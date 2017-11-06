@@ -9,7 +9,7 @@ Bayesian phylogenetic analysis of molecular sequences and VNTR or Microsatellite
 ## Building Docker BEAST2 and BEASTvntr
 
 ```
-$ docker build -t my-beast-vntr .
+$ docker build -t beast-vntr .
 ```
 
 ## Running GUI applications using Docker for Mac
@@ -48,7 +48,7 @@ where `w.x.y.z` is your IP address.
 ## Running BEASTvntr
 
 ```
-$ docker run -it -e DISPLAY=$IP:0 my-beast-vntr
+$ docker run -it -e DISPLAY=$IP:0 beast-vntr
 ```
 
 ## Known Issues
